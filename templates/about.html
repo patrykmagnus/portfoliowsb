@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block title %}Gallery{% endblock %}
+{% set active_page = "gallery" -%}
+{% block body %}
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon1.ico') }}">
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
- <title>About me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 </head>
+
 <body>
-<nav>
-    <ul>
-        <li><a href="/">STRONA GŁÓWNA</a></li>
-        <li><a href="about">O MNIE</a></li>
-        <li><a href="gallery">GALERIA</a></li>
-        <li><a href="contact">KONTAKT</a></li>
-    </ul>
-</nav>
-<lo>
-<h1>O mnie:</h1>
-<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-velit..."</p>
-<p> "There is no one who loves pain itself, who seeks after it and wants to have it, simply because
-it is pain..."</p>
-</lo>
+<h2>O mnie</h2>
 </body>
-</html>
+
+{% endblock %}
